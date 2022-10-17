@@ -8,6 +8,14 @@ ap = argparse.ArgumentParser()
 ap.add_argument("-q", "--query", required=True, help="news keyword")
 args = vars(ap.parse_args())
 
+print("""
+ ___ _   _ _   _ _____    _    ____  
+|_ _| \ | | | | | ____|  / \  |  _ \ 
+ | ||  \| | |_| |  _|   / _ \ | | | |
+ | || |\  |  _  | |___ / ___ \| |_| |
+|___|_| \_|_| |_|_____/_/   \_\____/ 
+""")
+
 
 def search_news_headlines(query) -> None:
     gn = GoogleNews(lang='id', country='id')
@@ -16,8 +24,7 @@ def search_news_headlines(query) -> None:
     timestr = time.strftime("%Y%m%d-%H%M%S")
     source_list = []
 
-    print("Total Data Scraped")
-    print(len(news_item))
+    print("Total Data Scraped: ", len(news_item))
 
     for j in news_item:
         source = j['title'].split(" - ", 1)[1]
