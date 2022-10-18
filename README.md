@@ -50,3 +50,8 @@ Sejauh ini sudah ada topik:
 - Bisnis
 - Entertainment
 - Teknologi
+
+## Target
+- [ ] 45.000 train set
+- [ ] 5.000 validation set
+- [ ] 5.000 test set
