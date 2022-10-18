@@ -15,3 +15,6 @@ Sejauh ini sudah ada topik:
 - Pendidikan
 - Internasional
 - Politik
+- Kesehatan
+- Pariwisata
+- Ekonomi
