@@ -27,7 +27,7 @@ $ pip install -r requirements.txt
 ## Usage
 ```
 # To scrape data
-$ python src/scraping.py --set train --query twitter --topic pendidikan
+$ python src/scraping.py --set train --query twitter --topic teknologi
 
 # To merge all scraped data
 $ python src/merge.py --set train
