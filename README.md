@@ -5,3 +5,13 @@
     Indonesian News Headline Dataset
   </p>
 </div>
+
+## TODO
+
+- Menentukan topik-topik besar yang ingin diklasifikasi
+
+Sejauh ini sudah ada topik:
+
+- Pendidikan
+- Internasional
+- Politik

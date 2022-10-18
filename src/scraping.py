@@ -7,6 +7,7 @@ import argparse
 ap = argparse.ArgumentParser()
 ap.add_argument("-q", "--query", required=True, help="news keyword")
 ap.add_argument("-t", "--topic", required=True, help="news topic")
+ap.add_argument("-s", "--set", required=True, help="dataset type")
 args = vars(ap.parse_args())
 
 print("""
@@ -30,7 +31,7 @@ print("""
 """)
 
 
-def search_news_headlines(query, topic=args["topic"].capitalize()) -> None:
+def search_news_headlines(set_type, query, topic=args["topic"].capitalize()) -> None:
     gn = GoogleNews(lang='id', country='id')
     search = gn.search(query)
     news_item = search['entries']
@@ -56,9 +57,9 @@ def search_news_headlines(query, topic=args["topic"].capitalize()) -> None:
     df['source'] = source_list
     df['topic'] = topic
 
-    path = 'data/'
-    df.to_csv(path + topic + "_" + timestr + '.csv')
+    path = "data/"+set_type+"_raws/"
+    df.to_csv(path + topic + "_" + query + "_" + timestr + '.csv', index=False)
 
 
 if __name__ == "__main__":
-    search_news_headlines(args["query"])
+    search_news_headlines(args["set"], args["query"])
