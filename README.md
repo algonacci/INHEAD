@@ -18,3 +18,5 @@ Sejauh ini sudah ada topik:
 - Kesehatan
 - Pariwisata
 - Ekonomi
+- Bisnis
+- Entertainment
