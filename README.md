@@ -20,3 +20,4 @@ Sejauh ini sudah ada topik:
 - Ekonomi
 - Bisnis
 - Entertainment
+- Teknologi
